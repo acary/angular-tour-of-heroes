@@ -13,6 +13,7 @@
     <span>{{hero.name}}</span>
     <button class="delete"
         (click)="delete(hero); $event.stopPropagation()">x</button>
+    <p *ngIf="heroes.length > 5">There are more than 5 heroes</p>
     </li>
 </ul>
 <div *ngIf="selectedHero">
